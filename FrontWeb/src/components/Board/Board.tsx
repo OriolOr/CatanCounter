@@ -1,8 +1,15 @@
 import React from "react";
-import "./Board.styles.css";
+import "./board.styles.css";
+import Card from "../Card/card"
 
 const Board = () => {
-  return <div className="boardContainer">Board</div>;
+  return <div className="boardContainer">
+    <Card />
+    <Card />
+    <Card />
+    <Card />
+    
+  </div>;
 };
 
 export default Board;
