@@ -1,8 +1,10 @@
-.cardContainer{
-    display : flex;
-    background-color: red;
-    height: 10%;
-    width: 60%;
-    margin: 10px;
-
+.cardContainer {
+  display: flex;
+  background-color: orange;
+  justify-content: space-around;
+  font-size: 1.5em;
+  font-family: monospace;
+  height: 10%;
+  width: 60%;
+  margin: 10px;
 }
