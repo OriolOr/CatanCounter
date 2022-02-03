@@ -7,10 +7,14 @@ const Card: React.FC = () => {
 
   return (
     <div className="cardContainer">
+    
       <span className="player">{player}</span>
       <span className="points">{points}</span>
+      <div className = "buttons" >
       <button onClick={addPoint}>+</button>
       <button onClick={subPoint}>-</button>
+      </div>
+
     </div>
   );
 

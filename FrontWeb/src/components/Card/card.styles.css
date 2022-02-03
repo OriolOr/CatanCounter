@@ -2,9 +2,21 @@
   display: flex;
   background-color: orange;
   justify-content: space-around;
+  align-items: center;
   font-size: 2em;
   font-family: monospace;
   height: 10%;
   width: 60%;
   margin: 10px;
+}
+
+button{
+    
+}
+
+
+.buttons{
+    display:flex;
+    flex-direction: column;
+    border : 2px solid salmon;
 }
