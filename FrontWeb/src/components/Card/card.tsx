@@ -5,12 +5,13 @@ const Card: React.FC = () => {
   const [player, setPlayer] = useState("Player");
   const [points, setPoints] = useState(0);
 
+
   return (
-    <div className="cardContainer">
+    <div  className="cardContainer">
     
-      <span className="player">{player}</span>
+      <span contentEditable={true}  >{player}</span>
       <span className="points">{points}</span>
-      <div className = "buttons" >
+      <div className = "buttonPack" >
       <button onClick={addPoint}>+</button>
       <button onClick={subPoint}>-</button>
       </div>
