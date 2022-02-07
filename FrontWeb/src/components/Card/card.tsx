@@ -9,7 +9,7 @@ const Card: React.FC = () => {
   return (
     <div  className="cardContainer">
     
-      <span contentEditable={true}  >{player}</span>
+      <span contentEditable={true} className = "card_player" >{player}</span>
       <span className="points">{points}</span>
       <div className = "buttonPack" >
       <button onClick={addPoint}>+</button>

@@ -10,6 +10,10 @@
   margin: 10px;
 }
 
+.card_player{
+    width: 50%;
+}
+
 .points{
     font-size: 1.5em;
 }
