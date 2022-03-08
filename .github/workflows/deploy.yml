@@ -24,8 +24,8 @@ jobs:
     - run: npm ci
       working-directory: FrontWeb/
       
-    - name: Print directory files
-      run: echo "hello"
+    - name: Get directory files
+      run: ls
       
     - run: npm run build --if-present
       working-directory: FrontWeb/
