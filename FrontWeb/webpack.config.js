@@ -8,12 +8,12 @@ module.exports = {
     extensions: [".js", ".ts", ".tsx"],
   },
   entry: {
-    app: ["../index.tsx", "./index.styles.css"],
+    app: ["./index.tsx", "./index.styles.css"],
   },
   devtool: "eval-source-map",
   stats: "errors-only",
   output: {
-    filename: "[name].[chunkhash].js",
+    filename: "[name].js",
   },
   module: {
     rules: [
