@@ -18,11 +18,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx?$/,
-        exclude: /node_modules/,
-        loader: "babel-loader",
-      },
-      {
         test: /\.(png|jpg)$/,
         exclude: /node_modules/,
         loader: "url-loader",
