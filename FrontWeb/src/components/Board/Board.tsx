@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 import "./board.styles.css";
 import Card from "../Card/card";
 
