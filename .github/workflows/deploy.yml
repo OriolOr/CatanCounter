@@ -37,7 +37,7 @@ jobs:
       
   build-Ubuntu:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
