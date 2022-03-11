@@ -24,11 +24,11 @@ jobs:
 
     - name: Install dependencies
       run: npm install      
-      working-directory: frontWeb/
+      working-directory: frontweb/
 
     - name : Run Build
       run: npm run build
-      working-directory: frontWeb/
+      working-directory: frontweb/
       
     - name: Get directory files
       run: ls
@@ -49,15 +49,15 @@ jobs:
 
     - name: Install dependencies
       run: npm install      
-      working-directory: FrontWeb/
+      working-directory: frontweb/
 
     - name : Run Build
       run: npm run build
-      working-directory: FrontWeb/
+      working-directory: frontweb/
       
     - name: Get directory files
       run: ls
-      working-directory: FrontWeb/src/components/Board
+      working-directory: frontWeb/src/components/board
       
 
       
