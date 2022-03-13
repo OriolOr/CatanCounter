@@ -34,3 +34,4 @@ jobs:
       with:
         branch: main
         folder: frontweb/dist 
+        token: ${secrets.DEPLOY_TOKEN}
