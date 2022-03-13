@@ -31,6 +31,7 @@ jobs:
       
     - name : Deploy 🚀
       uses: JamesIves/github-pages-deploy-action@v4.2.5
+      working-directory: frontweb/
       with:
         branch: main
         folder: dist 
