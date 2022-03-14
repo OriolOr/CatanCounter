@@ -1,6 +1,6 @@
 import React from "react";
 import "./board.styles.css";
-import Card from "../Card/card";
+import Card from "../card/card";
 
 const Board: React.FC = () => {
   return (
