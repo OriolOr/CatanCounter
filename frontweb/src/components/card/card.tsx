@@ -15,7 +15,6 @@ const Card: React.FC = () => {
       <button onClick={addPoint}>+</button>
       <button onClick={subPoint}>-</button>
       </div>
-
     </div>
   );
 
