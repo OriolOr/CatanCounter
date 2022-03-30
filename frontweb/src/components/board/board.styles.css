@@ -5,3 +5,16 @@
   width: 35rem;
   min-width: 25rem;
 }
+
+
+.addButtonContainer{
+  display: flex;
+  border-radius: 1em;
+  border: solid 0px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.addButtonContainer{
+  
+}
