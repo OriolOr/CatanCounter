@@ -4,14 +4,15 @@ import Card from "../card/card";
 
 const Board: React.FC = () => {
   
-  const [playerList, setPlayer] = useState([]);
+  const [playerList, setPlayer] = useState([{name: "Oriol" , points : 0}]);
+  const values = [0,1,2,3,4]
   return (
     <React.Fragment>
       <div className="boardContainer">
-        <Card />
-        <Card />
-        <Card />
- 
+      {playerList.map(function (player) {
+        return <p key={player.name}>Value {player.name}</p>;
+      })}
+      <Card/>
       </div>
       <div className ="addButtonContainer">
         <button onClick={AddPlayer}>Add</button>
@@ -19,18 +20,19 @@ const Board: React.FC = () => {
         
       </div>
     </React.Fragment>
-
-
   );
 
   function AddPlayer(){
-    console.log("AddPlayer") 
+    playerList.push({name: "Antonio" , points :  0})
+    setPlayer(playerList);
+    console.log(playerList)
   }
 
   function RemovePlayer(){
-    console.log("RemvovePlayerer") 
-  }
+    playerList.pop()
+    console.log(playerList)
 
+  }
 };
 
 export default Board;

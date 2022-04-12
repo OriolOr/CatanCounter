@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./card.styles.css";
 
-const Card: React.FC = () => {
+const Card: React.FC = (props) => {
   const [player, setPlayer] = useState("Player");
   const [points, setPoints] = useState(0);
 
