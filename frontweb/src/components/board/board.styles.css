@@ -9,12 +9,26 @@
 
 .addButtonContainer{
   display: flex;
-  border-radius: 1em;
-  border: solid 0px;
+  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
 }
 
-.addButtonContainer{
-  
+.addButtonContainer button{
+
+  margin : 0.5em;
+  height: 2em;
+  width: 5em;
+  border: none;
+  border-radius: 5px;
+}
+
+#addButton{
+  color : black;
+  background-color: #37e684;
+}
+
+#removeButton{
+  color : white;
+  background-color: #dc3d4b;
 }

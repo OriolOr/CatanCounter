@@ -13,12 +13,11 @@ const Board: React.FC = () => {
       {playerList.map((player) => {
         return <Card namePlayer ={player.name} />; 
       })}
-
       </div>
+
       <div className ="addButtonContainer">
-        <button onClick={AddPlayer}>Add</button>
-        <button onClick={RemovePlayer}>Remove</button>
-        
+        <button id="addButton" onClick={AddPlayer}>Add</button>
+        <button id="removeButton" onClick={RemovePlayer}>Remove</button>    
       </div>
     </React.Fragment>
   );
@@ -28,9 +27,9 @@ const Board: React.FC = () => {
   }
 
   function RemovePlayer(){
-    let temp = [...playerList];
-    temp.pop();
-    setPlayer(temp)
+    const tempList = [...playerList];
+    tempList.pop();
+    setPlayer(tempList)
   }
 };
 export default Board;
