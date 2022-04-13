@@ -28,7 +28,9 @@ const Board: React.FC = () => {
   }
 
   function RemovePlayer(){
-
+    let temp = [...playerList];
+    temp.pop();
+    setPlayer(temp)
   }
 };
 export default Board;
