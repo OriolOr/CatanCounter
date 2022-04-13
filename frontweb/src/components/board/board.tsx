@@ -1,18 +1,19 @@
+
 import React, { useState } from "react";
 import "./board.styles.css";
 import Card from "../card/card";
 
 const Board: React.FC = () => {
   
-  const [playerList, setPlayer] = useState([{name: "Oriol" , points : 0}]);
-  const values = [0,1,2,3,4]
+  const [playerList, setPlayer] = useState([{name: "Oriol" , points : 0},{name: "Carla" , points : 0}]);
   return (
     <React.Fragment>
       <div className="boardContainer">
-      {playerList.map(function (player) {
-        return <p key={player.name}>Value {player.name}</p>;
+      
+      {playerList.map((player) => {
+        return <Card namePlayer ={player.name} />; 
       })}
-      <Card/>
+
       </div>
       <div className ="addButtonContainer">
         <button onClick={AddPlayer}>Add</button>
@@ -24,15 +25,14 @@ const Board: React.FC = () => {
 
   function AddPlayer(){
     playerList.push({name: "Antonio" , points :  0})
-    setPlayer(playerList);
     console.log(playerList)
+    setPlayer(playerList);
+
   }
 
   function RemovePlayer(){
-    playerList.pop()
+    playerList.pop();
     console.log(playerList)
-
   }
 };
-
 export default Board;
