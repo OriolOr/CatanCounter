@@ -28,7 +28,15 @@
   background-color: #37e684;
 }
 
+#addButton:hover{
+  background-color: #30ed6f;
+}
+
 #removeButton{
   color : white;
   background-color: #dc3d4b;
+}
+#removeButton:hover{
+
+  background-color: #fa4454;
 }

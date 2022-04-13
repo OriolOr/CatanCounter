@@ -5,7 +5,7 @@ import Card from "../card/card";
 
 const Board: React.FC = () => {
   
-  const [playerList, setPlayer] = useState([{name: "Oriol" , points : 0},{name: "Carla" , points : 0}]);
+  const [playerList, setPlayer] = useState([{name: "Oriol" , points : 0}]);
   return (
     <React.Fragment>
       <div className="boardContainer">
