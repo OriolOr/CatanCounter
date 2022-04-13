@@ -24,15 +24,11 @@ const Board: React.FC = () => {
   );
 
   function AddPlayer(){
-    playerList.push({name: "Antonio" , points :  0})
-    console.log(playerList)
-    setPlayer(playerList);
-
+    setPlayer(playerList.concat({name:"New Player", points: 0}));
   }
 
   function RemovePlayer(){
-    playerList.pop();
-    console.log(playerList)
+
   }
 };
 export default Board;
