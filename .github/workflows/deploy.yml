@@ -28,4 +28,12 @@ jobs:
     - name : Run Build 🏗
       run: npm run build
       working-directory: frontweb/
-      
+  deploy: 
+    runs-on: ubuntu-latest
+    steps:
+    - name : Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.2.5
+      with:
+        branch: gh-deploy
+        folder: frontweb/dist 
+        token: ${{secrets.DEPLOY_TOKEN}}
