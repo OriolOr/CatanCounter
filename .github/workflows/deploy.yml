@@ -29,9 +29,3 @@ jobs:
       run: npm run build
       working-directory: frontweb/
       
-    - name : Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@v4.2.5
-      with:
-        branch: gh-deploy
-        folder: frontweb/dist 
-        token: ${{secrets.DEPLOY_TOKEN}}
