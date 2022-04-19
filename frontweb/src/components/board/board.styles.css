@@ -5,3 +5,38 @@
   width: 35rem;
   min-width: 25rem;
 }
+
+
+.addButtonContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.addButtonContainer button{
+
+  margin : 0.5em;
+  height: 2em;
+  width: 5em;
+  border: none;
+  border-radius: 5px;
+}
+
+#addButton{
+  color : black;
+  background-color: #37e684;
+}
+
+#addButton:hover{
+  background-color: #30ed6f;
+}
+
+#removeButton{
+  color : white;
+  background-color: #dc3d4b;
+}
+#removeButton:hover{
+
+  background-color: #fa4454;
+}
