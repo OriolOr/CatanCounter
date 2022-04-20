@@ -30,3 +30,11 @@ jobs:
       working-directory: frontweb/
 
 
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@v4.3.0
+      with:
+        branch: gh-deploy
+        folder: frontweb/dist
+        token : ${{secrets.DEPLOY_TOKEN}}      
+      
+
