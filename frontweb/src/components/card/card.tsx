@@ -12,6 +12,7 @@ const Card: React.FC<CardProps> = ({namePlayer} : CardProps) => {
   return (
     <div  className="cardContainer">
       <span contentEditable={true} className = "card_player" >{namePlayer}</span>
+      <input type = "color" className = "inputColor"></input>
       <span className="points">{points}</span>
       <div className = "buttonPack" >
       <button onClick={addPoint}>+</button>
