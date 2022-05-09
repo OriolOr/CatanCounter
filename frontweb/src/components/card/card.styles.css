@@ -22,3 +22,8 @@
     display:flex;
     flex-direction: column;
 }
+
+.inputColor{
+    height: 1em;
+    width: 1em;
+}
